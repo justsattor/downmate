@@ -1,0 +1,54 @@
+{
+  "meta": {
+    "title": "Instagram Downloader | MultiSave",
+    "description": "Instagram वीडियो और फोटो आसानी से डाउनलोड करें"
+  },
+  "header": {
+    "docs": "API Docs"
+  },
+  "home": {
+    "title": "Instagram Downloader",
+    "subtitle": "Instagram पोस्ट, रील और स्टोरीज़ आसानी से डाउनलोड करें"
+  },
+  "features": {
+    "fast": {
+      "title": "तेज़ डाउनलोड",
+      "description": "कुछ सेकंड में मीडिया फाइलें डाउनलोड करें"
+    },
+    "secure": {
+      "title": "सुरक्षित",
+      "description": "आपका डेटा सुरक्षित है"
+    },
+    "hd": {
+      "title": "HD गुणवत्ता",
+      "description": "मूल गुणवत्ता में डाउनलोड करें"
+    }
+  },
+  "form": {
+    "label": "Instagram URL",
+    "placeholder": "https://www.instagram.com/reel/...",
+    "submit": "डाउनलोड करें",
+    "loading": "लोड हो रहा है...",
+    "urlRequired": "URL दर्ज करें",
+    "captchaRequired": "कृपया कैप्चा पूरा करें",
+    "error": "एक त्रुटि हुई",
+    "emptyState": "Instagram पोस्ट, रील या स्टोरी लिंक दर्ज करें",
+    "apiErrors": {
+      "invalidApiKey": "अमान्य या समाप्त API कुंजी",
+      "rateLimitExceeded": "अनुरोध सीमा समाप्त। बाद में पुनः प्रयास करें",
+      "forbidden": "पहुंच निषेध",
+      "serverError": "सर्वर त्रुटि हुई"
+    }
+  },
+  "results": {
+    "single": "1 मीडिया मिला",
+    "multiple": "{count} मीडिया मिले",
+    "video": "वीडियो",
+    "image": "फोटो",
+    "downloadVideo": "वीडियो डाउनलोड करें",
+    "downloadImage": "फोटो डाउनलोड करें"
+  },
+  "footer": {
+    "poweredBy": "द्वारा संचालित"
+  }
+}

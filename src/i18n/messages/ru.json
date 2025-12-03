@@ -1,0 +1,54 @@
+{
+  "meta": {
+    "title": "Instagram Downloader | MultiSave",
+    "description": "Легко скачивайте видео и фото из Instagram"
+  },
+  "header": {
+    "docs": "API Docs"
+  },
+  "home": {
+    "title": "Instagram Downloader",
+    "subtitle": "Легко скачивайте посты, рилсы и сторис из Instagram"
+  },
+  "features": {
+    "fast": {
+      "title": "Быстрая загрузка",
+      "description": "Скачивайте медиафайлы за несколько секунд"
+    },
+    "secure": {
+      "title": "Безопасно",
+      "description": "Ваши данные защищены"
+    },
+    "hd": {
+      "title": "HD качество",
+      "description": "Скачивание в оригинальном качестве"
+    }
+  },
+  "form": {
+    "label": "Instagram URL",
+    "placeholder": "https://www.instagram.com/reel/...",
+    "submit": "Скачать",
+    "loading": "Загрузка...",
+    "urlRequired": "Введите URL",
+    "captchaRequired": "Пожалуйста, пройдите проверку",
+    "error": "Произошла ошибка",
+    "emptyState": "Введите ссылку на пост, рилс или сторис Instagram",
+    "apiErrors": {
+      "invalidApiKey": "Недействительный или просроченный API ключ",
+      "rateLimitExceeded": "Лимит запросов исчерпан. Попробуйте позже",
+      "forbidden": "Доступ запрещён",
+      "serverError": "Ошибка сервера"
+    }
+  },
+  "results": {
+    "single": "Найден 1 медиафайл",
+    "multiple": "Найдено {count} медиафайлов",
+    "video": "Видео",
+    "image": "Фото",
+    "downloadVideo": "Скачать видео",
+    "downloadImage": "Скачать фото"
+  },
+  "footer": {
+    "poweredBy": "Работает на"
+  }
+}

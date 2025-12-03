@@ -1,0 +1,54 @@
+{
+  "meta": {
+    "title": "Instagram Downloader | MultiSave",
+    "description": "Download Instagram videos and images easily"
+  },
+  "header": {
+    "docs": "API Docs"
+  },
+  "home": {
+    "title": "Instagram Downloader",
+    "subtitle": "Download Instagram posts, reels and stories easily"
+  },
+  "features": {
+    "fast": {
+      "title": "Fast Download",
+      "description": "Download media files in seconds"
+    },
+    "secure": {
+      "title": "Secure",
+      "description": "Your data is protected"
+    },
+    "hd": {
+      "title": "HD Quality",
+      "description": "Download in original quality"
+    }
+  },
+  "form": {
+    "label": "Instagram URL",
+    "placeholder": "https://www.instagram.com/reel/...",
+    "submit": "Download",
+    "loading": "Loading...",
+    "urlRequired": "Please enter URL",
+    "captchaRequired": "Please complete the captcha",
+    "error": "An error occurred",
+    "emptyState": "Enter Instagram post, reel or story link",
+    "apiErrors": {
+      "invalidApiKey": "Invalid or expired API key",
+      "rateLimitExceeded": "Rate limit exceeded. Please try again later",
+      "forbidden": "Access forbidden",
+      "serverError": "Server error occurred"
+    }
+  },
+  "results": {
+    "single": "1 media found",
+    "multiple": "{count} media found",
+    "video": "Video",
+    "image": "Image",
+    "downloadVideo": "Download Video",
+    "downloadImage": "Download Image"
+  },
+  "footer": {
+    "poweredBy": "Powered by"
+  }
+}

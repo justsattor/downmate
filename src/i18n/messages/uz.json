@@ -1,0 +1,54 @@
+{
+  "meta": {
+    "title": "Instagram Downloader | MultiSave",
+    "description": "Instagram video va rasmlarni osonlik bilan yuklab oling"
+  },
+  "header": {
+    "docs": "API Docs"
+  },
+  "home": {
+    "title": "Instagram Downloader",
+    "subtitle": "Instagram post, reel va story larni osonlik bilan yuklab oling"
+  },
+  "features": {
+    "fast": {
+      "title": "Tez yuklab olish",
+      "description": "Bir necha soniyada media fayllarni yuklab oling"
+    },
+    "secure": {
+      "title": "Xavfsiz",
+      "description": "Sizning ma'lumotlaringiz himoyalangan"
+    },
+    "hd": {
+      "title": "HD sifat",
+      "description": "Original sifatda yuklab olish imkoniyati"
+    }
+  },
+  "form": {
+    "label": "Instagram URL",
+    "placeholder": "https://www.instagram.com/reel/...",
+    "submit": "Yuklab olish",
+    "loading": "Yuklanmoqda...",
+    "urlRequired": "URL kiriting",
+    "captchaRequired": "Iltimos, captcha ni to'ldiring",
+    "error": "Xatolik yuz berdi",
+    "emptyState": "Instagram post, reel yoki story havolasini kiriting",
+    "apiErrors": {
+      "invalidApiKey": "API kalit yaroqsiz yoki muddati tugagan",
+      "rateLimitExceeded": "So'rovlar limiti tugadi. Keyinroq urinib ko'ring",
+      "forbidden": "Kirish taqiqlangan",
+      "serverError": "Server xatosi yuz berdi"
+    }
+  },
+  "results": {
+    "single": "1 ta media topildi",
+    "multiple": "{count} ta media topildi",
+    "video": "Video",
+    "image": "Rasm",
+    "downloadVideo": "Download Video",
+    "downloadImage": "Download Image"
+  },
+  "footer": {
+    "poweredBy": "Powered by"
+  }
+}
