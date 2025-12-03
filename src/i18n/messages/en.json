@@ -6,6 +6,7 @@
   "header": {
     "docs": "API Docs",
     "features": "Features",
+    "howToUse": "How to Use",
     "faq": "FAQ",
     "support": "Support"
   },
@@ -53,6 +54,24 @@
   },
   "footer": {
     "poweredBy": "Powered by"
+  },
+  "howTo": {
+    "title": "How to Download",
+    "step": "Step",
+    "steps": {
+      "copy": {
+        "title": "Copy Link",
+        "description": "Copy the Instagram post, reel or story link"
+      },
+      "paste": {
+        "title": "Paste URL",
+        "description": "Paste the copied link in the input field above"
+      },
+      "download": {
+        "title": "Download",
+        "description": "Click download button and save to your device"
+      }
+    }
   },
   "featuresPage": {
     "back": "Back",

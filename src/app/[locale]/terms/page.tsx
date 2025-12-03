@@ -24,7 +24,7 @@ export default function TermsPage() {
                 1. Agreement to Terms
               </h2>
               <p className="text-gray-600 dark:text-gray-400 leading-relaxed mb-4">
-                By accessing or using Multisave&apos;s API marketplace platform (&quot;Service&quot;), you agree to be bound by these Terms of Service (&quot;Terms&quot;). If you disagree with any part of these terms, you may not access the Service.
+                By accessing or using Downmate&apos;s API marketplace platform (&quot;Service&quot;), you agree to be bound by these Terms of Service (&quot;Terms&quot;). If you disagree with any part of these terms, you may not access the Service.
               </p>
               <p className="text-gray-600 dark:text-gray-400 leading-relaxed">
                 These Terms apply to all visitors, users, and others who access or use the Service, including API providers and consumers.
@@ -36,7 +36,7 @@ export default function TermsPage() {
                 2. Description of Service
               </h2>
               <p className="text-gray-600 dark:text-gray-400 leading-relaxed">
-                Multisave provides an API marketplace platform that enables developers and businesses to discover, subscribe to, and integrate various APIs. Our services include API hosting, management, analytics, billing, and related tools to facilitate API consumption and distribution.
+                Downmate provides an API marketplace platform that enables developers and businesses to discover, subscribe to, and integrate various APIs. Our services include API hosting, management, analytics, billing, and related tools to facilitate API consumption and distribution.
               </p>
             </section>
 
@@ -112,7 +112,7 @@ export default function TermsPage() {
                 6. Intellectual Property
               </h2>
               <p className="text-gray-600 dark:text-gray-400 leading-relaxed mb-4">
-                The Service and its original content, features, and functionality are owned by Multisave and are protected by international copyright, trademark, patent, trade secret, and other intellectual property laws.
+                The Service and its original content, features, and functionality are owned by Downmate and are protected by international copyright, trademark, patent, trade secret, and other intellectual property laws.
               </p>
               <p className="text-gray-600 dark:text-gray-400 leading-relaxed">
                 APIs available through our platform may be subject to their own intellectual property rights and licensing terms. Please review individual API documentation for specific terms.
@@ -132,7 +132,7 @@ export default function TermsPage() {
                 <li>Provide reasonable uptime and performance</li>
                 <li>Respond to support requests in a timely manner</li>
                 <li>Not include malicious code or vulnerabilities</li>
-                <li>Grant Multisave necessary rights to display and distribute your API</li>
+                <li>Grant Downmate necessary rights to display and distribute your API</li>
               </ul>
             </section>
 
@@ -144,7 +144,7 @@ export default function TermsPage() {
                 We strive to maintain high availability of our Service but do not guarantee uninterrupted access. We may temporarily suspend the Service for maintenance, updates, or other reasons. We will provide advance notice when possible.
               </p>
               <p className="text-gray-600 dark:text-gray-400 leading-relaxed">
-                Current service status is available at status.multisave.uz.
+                Current service status is available at status.Downmate.uz.
               </p>
             </section>
 
@@ -153,7 +153,7 @@ export default function TermsPage() {
                 9. Limitation of Liability
               </h2>
               <p className="text-gray-600 dark:text-gray-400 leading-relaxed mb-4">
-                TO THE MAXIMUM EXTENT PERMITTED BY LAW, MULTISAVE SHALL NOT BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES, INCLUDING BUT NOT LIMITED TO LOSS OF PROFITS, DATA, USE, GOODWILL, OR OTHER INTANGIBLE LOSSES.
+                TO THE MAXIMUM EXTENT PERMITTED BY LAW, Downmate SHALL NOT BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES, INCLUDING BUT NOT LIMITED TO LOSS OF PROFITS, DATA, USE, GOODWILL, OR OTHER INTANGIBLE LOSSES.
               </p>
               <p className="text-gray-600 dark:text-gray-400 leading-relaxed">
                 Our total liability for any claims arising out of or relating to these Terms or the Service shall not exceed the amount you paid to us in the twelve (12) months preceding the claim.
@@ -174,7 +174,7 @@ export default function TermsPage() {
                 11. Indemnification
               </h2>
               <p className="text-gray-600 dark:text-gray-400 leading-relaxed">
-                You agree to defend, indemnify, and hold harmless Multisave and its officers, directors, employees, and agents from and against any claims, liabilities, damages, judgments, awards, losses, costs, or expenses arising out of or relating to your use of the Service or violation of these Terms.
+                You agree to defend, indemnify, and hold harmless Downmate and its officers, directors, employees, and agents from and against any claims, liabilities, damages, judgments, awards, losses, costs, or expenses arising out of or relating to your use of the Service or violation of these Terms.
               </p>
             </section>
 
@@ -217,10 +217,10 @@ export default function TermsPage() {
               </p>
               <div className="bg-gray-50 dark:bg-gray-800 rounded-xl p-6">
                 <p className="text-gray-700 dark:text-gray-300">
-                  <strong>Email:</strong> legal@multisave.uz
+                  <strong>Email:</strong> legal@Downmate.uz
                 </p>
                 <p className="text-gray-700 dark:text-gray-300 mt-2">
-                  <strong>Support:</strong> support.multisave.uz
+                  <strong>Support:</strong> support.Downmate.uz
                 </p>
               </div>
             </section>

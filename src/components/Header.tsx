@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { Moon, Sun, MessageCircle, Globe, ChevronDown, Sparkles, HelpCircle, CirclePlay } from "lucide-react";
+import { Moon, Sun, MessageCircle, Globe, ChevronDown, Sparkles, HelpCircle, CirclePlay, BookOpen, Menu, X } from "lucide-react";
 import { useTheme } from "@/context/ThemeContext";
 import { useTranslations, useLocale } from "next-intl";
 import { useRouter, usePathname } from "next/navigation";
@@ -22,6 +22,7 @@ export function Header() {
   const router = useRouter();
   const pathname = usePathname();
   const [langOpen, setLangOpen] = useState(false);
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const handleLanguageChange = (code: string) => {
     const newPath = pathname.replace(`/${locale}`, `/${code}`);
@@ -31,8 +32,14 @@ export function Header() {
 
   const currentLang = languages.find((l) => l.code === locale) || languages[0];
 
+  const navLinks = [
+    { href: "#features", icon: Sparkles, label: t("features") },
+    { href: "#how-to", icon: BookOpen, label: t("howToUse") },
+    { href: "#faq", icon: HelpCircle, label: t("faq") },
+  ];
+
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 h-16 bg-white/80 dark:bg-gray-950/80 backdrop-blur-md border-b border-gray-200 dark:border-gray-800">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-white/80 dark:bg-gray-950/80 backdrop-blur-md border-b border-gray-200 dark:border-gray-800">
       <div className="max-w-4xl mx-auto flex items-center justify-between h-16 px-4 sm:px-6">
         <Link href={`/${locale}`} className="flex items-center gap-2">
           <CirclePlay className="w-8 h-8 text-brand-500" />
@@ -41,32 +48,23 @@ export function Header() {
           </span>
         </Link>
 
-        <div className="flex items-center gap-2 sm:gap-3">
-          <Link
-            href={`/${locale}/features`}
-            className={cn(
-              "flex items-center gap-1.5 px-3 py-2 rounded-lg",
-              "text-gray-600 dark:text-gray-300",
-              "hover:bg-gray-100 dark:hover:bg-gray-800",
-              "transition-colors text-sm font-medium"
-            )}
-          >
-            <Sparkles className="w-4 h-4" />
-            <span className="hidden sm:inline">{t("features")}</span>
-          </Link>
-
-          <Link
-            href={`/${locale}/features#faq`}
-            className={cn(
-              "flex items-center gap-1.5 px-3 py-2 rounded-lg",
-              "text-gray-600 dark:text-gray-300",
-              "hover:bg-gray-100 dark:hover:bg-gray-800",
-              "transition-colors text-sm font-medium"
-            )}
-          >
-            <HelpCircle className="w-4 h-4" />
-            <span className="hidden sm:inline">{t("faq")}</span>
-          </Link>
+        {/* Desktop Navigation */}
+        <div className="hidden md:flex items-center gap-2 sm:gap-3">
+          {navLinks.map((link) => (
+            <a
+              key={link.href}
+              href={link.href}
+              className={cn(
+                "flex items-center gap-1.5 px-3 py-2 rounded-lg",
+                "text-gray-600 dark:text-gray-300",
+                "hover:bg-gray-100 dark:hover:bg-gray-800",
+                "transition-colors text-sm font-medium"
+              )}
+            >
+              <link.icon className="w-4 h-4" />
+              <span>{link.label}</span>
+            </a>
+          ))}
 
           <div className="relative">
             <button
@@ -79,7 +77,7 @@ export function Header() {
               )}
             >
               <Globe className="w-5 h-5" />
-              <span className="hidden sm:inline text-sm font-medium">{currentLang.label}</span>
+              <span className="text-sm font-medium">{currentLang.label}</span>
               <ChevronDown className={cn("w-4 h-4 transition-transform", langOpen && "rotate-180")} />
             </button>
 
@@ -127,17 +125,119 @@ export function Header() {
             href="https://t.me/techiboyz"
             target="_blank"
             className={cn(
-              "flex items-center gap-2 p-2 sm:px-4 sm:py-2 rounded-lg",
+              "flex items-center gap-2 px-4 py-2 rounded-lg",
               "bg-brand-500 hover:bg-brand-600",
               "text-white text-sm font-medium",
               "transition-colors"
             )}
           >
-            <span className="hidden sm:inline">{t("support")}</span>
+            <span>{t("support")}</span>
             <MessageCircle className="w-4 h-4" />
           </a>
         </div>
+
+        {/* Mobile Navigation Toggle */}
+        <div className="flex md:hidden items-center gap-2">
+          <button
+            onClick={toggleTheme}
+            className={cn(
+              "p-2 rounded-lg",
+              "text-gray-500 dark:text-gray-400",
+              "hover:bg-gray-100 dark:hover:bg-gray-800",
+              "transition-colors"
+            )}
+          >
+            {theme === "dark" ? (
+              <Sun className="w-5 h-5" />
+            ) : (
+              <Moon className="w-5 h-5" />
+            )}
+          </button>
+
+          <button
+            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+            className={cn(
+              "p-2 rounded-lg",
+              "text-gray-500 dark:text-gray-400",
+              "hover:bg-gray-100 dark:hover:bg-gray-800",
+              "transition-colors"
+            )}
+          >
+            {mobileMenuOpen ? (
+              <X className="w-6 h-6" />
+            ) : (
+              <Menu className="w-6 h-6" />
+            )}
+          </button>
+        </div>
       </div>
+
+      {/* Mobile Menu */}
+      {mobileMenuOpen && (
+        <div className="md:hidden bg-white dark:bg-gray-950 border-b border-gray-200 dark:border-gray-800">
+          <div className="px-4 py-4 space-y-2">
+            {navLinks.map((link) => (
+              <a
+                key={link.href}
+                href={link.href}
+                onClick={() => setMobileMenuOpen(false)}
+                className={cn(
+                  "flex items-center gap-3 px-4 py-3 rounded-lg",
+                  "text-gray-700 dark:text-gray-300",
+                  "hover:bg-gray-100 dark:hover:bg-gray-800",
+                  "transition-colors text-sm font-medium"
+                )}
+              >
+                <link.icon className="w-5 h-5" />
+                {link.label}
+              </a>
+            ))}
+
+            <div className="border-t border-gray-200 dark:border-gray-800 pt-2 mt-2">
+              <div className="px-4 py-2 text-xs font-medium text-gray-500 dark:text-gray-400 uppercase">
+                {t("features") === "Features" ? "Language" : "Til"}
+              </div>
+              <div className="grid grid-cols-2 gap-2">
+                {languages.map((lang) => (
+                  <button
+                    key={lang.code}
+                    onClick={() => {
+                      handleLanguageChange(lang.code);
+                      setMobileMenuOpen(false);
+                    }}
+                    className={cn(
+                      "flex items-center gap-2 px-4 py-2 rounded-lg text-sm transition-colors",
+                      locale === lang.code
+                        ? "bg-brand-500/10 text-brand-500 dark:text-brand-400"
+                        : "text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800"
+                    )}
+                  >
+                    <span>{lang.flag}</span>
+                    {lang.label}
+                  </button>
+                ))}
+              </div>
+            </div>
+
+            <div className="pt-2">
+              <a
+                href="https://t.me/techiboyz"
+                target="_blank"
+                onClick={() => setMobileMenuOpen(false)}
+                className={cn(
+                  "flex items-center justify-center gap-2 w-full px-4 py-3 rounded-lg",
+                  "bg-brand-500 hover:bg-brand-600",
+                  "text-white text-sm font-medium",
+                  "transition-colors"
+                )}
+              >
+                <MessageCircle className="w-5 h-5" />
+                {t("support")}
+              </a>
+            </div>
+          </div>
+        </div>
+      )}
     </header>
   );
 }

@@ -1,27 +1,11 @@
 "use client";
 
-import { useState, useRef, useEffect } from "react";
+import { useState } from "react";
 import { Download, Link2, Loader2, AlertCircle, CheckCircle2, Instagram } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { cn } from "@/lib/utils";
 import { InstagramMediaItem, InstagramApiResponse } from "@/lib/types";
 import { MediaCard } from "./MediaCard";
-
-declare global {
-  interface Window {
-    turnstile: {
-      render: (container: HTMLElement, options: { 
-        sitekey: string; 
-        callback: (token: string) => void; 
-        "expired-callback": () => void; 
-        "error-callback": (error: string) => void;
-        theme: string 
-      }) => string;
-      reset: (widgetId: string) => void;
-      remove: (widgetId: string) => void;
-    };
-  }
-}
 
 export function DownloaderForm() {
   const t = useTranslations();
@@ -29,56 +13,6 @@ export function DownloaderForm() {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [results, setResults] = useState<InstagramMediaItem[]>([]);
-  const [turnstileToken, setTurnstileToken] = useState<string | null>(null);
-  const [turnstileSkipped, setTurnstileSkipped] = useState(false);
-  const turnstileRef = useRef<HTMLDivElement>(null);
-  const widgetIdRef = useRef<string | null>(null);
-
-  useEffect(() => {
-    const siteKey = process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY;
-    
-    if (!siteKey) {
-      setTurnstileSkipped(true);
-      return;
-    }
-
-    const script = document.createElement("script");
-    script.src = "https://challenges.cloudflare.com/turnstile/v0/api.js";
-    script.async = true;
-    script.onerror = () => {
-      setTurnstileSkipped(true);
-    };
-    script.onload = () => {
-      if (turnstileRef.current && window.turnstile) {
-        try {
-          widgetIdRef.current = window.turnstile.render(turnstileRef.current, {
-            sitekey: siteKey,
-            callback: (token: string) => {
-              setTurnstileToken(token);
-              setTurnstileSkipped(false);
-            },
-            "expired-callback": () => setTurnstileToken(null),
-            "error-callback": () => {
-              setTurnstileSkipped(true);
-              setTurnstileToken(null);
-            },
-            theme: "auto",
-          });
-        } catch {
-          setTurnstileSkipped(true);
-        }
-      }
-    };
-    document.body.appendChild(script);
-    return () => {
-      if (widgetIdRef.current && window.turnstile) {
-        try {
-          window.turnstile.remove(widgetIdRef.current);
-        } catch {}
-      }
-      document.body.removeChild(script);
-    };
-  }, []);
 
   const getErrorMessage = (error: string, statusCode?: number): string => {
     if (error.toLowerCase().includes("invalid") && error.toLowerCase().includes("api key")) {
@@ -104,11 +38,6 @@ export function DownloaderForm() {
       return;
     }
 
-    if (!turnstileSkipped && !turnstileToken) {
-      setError(t("form.captchaRequired"));
-      return;
-    }
-
     setLoading(true);
     setError(null);
     setResults([]);
@@ -117,10 +46,7 @@ export function DownloaderForm() {
       const response = await fetch("/api/download", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ 
-          url, 
-          turnstileToken: turnstileSkipped ? null : turnstileToken 
-        }),
+        body: JSON.stringify({ url }),
       });
 
       const data = await response.json();
@@ -136,25 +62,18 @@ export function DownloaderForm() {
       setError(err instanceof Error ? err.message : t("form.error"));
     } finally {
       setLoading(false);
-      setTurnstileToken(null);
-      if (widgetIdRef.current && window.turnstile) {
-        window.turnstile.reset(widgetIdRef.current);
-      }
     }
   };
 
   const handleDownload = async (item: InstagramMediaItem, index: number) => {
     try {
-      const response = await fetch(item.url);
-      const blob = await response.blob();
-      const downloadUrl = window.URL.createObjectURL(blob);
+      const proxyUrl = `/api/proxy?url=${encodeURIComponent(item.url)}&type=${item.type}`;
       const link = document.createElement("a");
-      link.href = downloadUrl;
-      link.download = `instagram-${item.type}-${index + 1}.${item.type === "video" ? "mp4" : "jpg"}`;
+      link.href = proxyUrl;
+      link.download = `downmate-${item.type}-${index + 1}.${item.type === "video" ? "mp4" : "jpg"}`;
       document.body.appendChild(link);
       link.click();
       document.body.removeChild(link);
-      window.URL.revokeObjectURL(downloadUrl);
     } catch {
       window.open(item.url, "_blank");
     }
@@ -181,11 +100,9 @@ export function DownloaderForm() {
           </div>
         </div>
 
-        <div ref={turnstileRef} className={cn("flex justify-center", turnstileSkipped && "hidden")}></div>
-
         <button
           type="submit"
-          disabled={loading || (!turnstileSkipped && !turnstileToken)}
+          disabled={loading}
           className={cn(
             "w-full flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl font-medium transition-all",
             "bg-brand-500 hover:bg-brand-600 text-white",

@@ -5,8 +5,8 @@ import { HomeContent } from "@/components/HomeContent";
 import LandingFooter from "@/components/LandingFooter";
 
 export const metadata: Metadata = {
-  title: "Instagram Downloader | MultiSave",
-  description: "Download Instagram videos and images easily with MultiSave API",
+  title: "Instagram Downloader | Downmate",
+  description: "Download Instagram videos and images easily with Downmate API",
 };
 
 export default function HomePage() {

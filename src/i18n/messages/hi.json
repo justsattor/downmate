@@ -1,11 +1,12 @@
 {
   "meta": {
-    "title": "Instagram Downloader | MultiSave",
+    "title": "Instagram Downloader | Downmate",
     "description": "Instagram वीडियो और फोटो आसानी से डाउनलोड करें"
   },
   "header": {
     "docs": "API Docs",
     "features": "सुविधाएं",
+    "howToUse": "कैसे करें",
     "faq": "FAQ",
     "support": "सहायता"
   },
@@ -54,6 +55,24 @@
   "footer": {
     "poweredBy": "द्वारा संचालित"
   },
+  "howTo": {
+    "title": "कैसे डाउनलोड करें",
+    "step": "चरण",
+    "steps": {
+      "copy": {
+        "title": "लिंक कॉपी करें",
+        "description": "Instagram पोस्ट, रील या स्टोरी का लिंक कॉपी करें"
+      },
+      "paste": {
+        "title": "URL पेस्ट करें",
+        "description": "कॉपी किए गए लिंक को ऊपर के फ़ील्ड में पेस्ट करें"
+      },
+      "download": {
+        "title": "डाउनलोड करें",
+        "description": "डाउनलोड बटन पर क्लिक करें और अपने डिवाइस में सेव करें"
+      }
+    }
+  },
   "featuresPage": {
     "back": "वापस",
     "hero": {
@@ -61,14 +80,14 @@
       "subtitle": "वे सभी अद्भुत सुविधाएं खोजें जो Instagram सामग्री डाउनलोड करना पहले से आसान बनाती हैं"
     },
     "sections": {
-      "mainFeatures": "MultiSave क्यों चुनें?"
+      "mainFeatures": "Downmate क्यों चुनें?"
     },
     "faq": {
       "title": "अक्सर पूछे जाने वाले प्रश्न",
       "items": {
         "q1": {
-          "question": "क्या MultiSave मुफ्त है?",
-          "answer": "हां, MultiSave पूरी तरह से मुफ्त है। आप बिना किसी शुल्क के असीमित Instagram सामग्री डाउनलोड कर सकते हैं।"
+          "question": "क्या Downmate मुफ्त है?",
+          "answer": "हां, Downmate पूरी तरह से मुफ्त है। आप बिना किसी शुल्क के असीमित Instagram सामग्री डाउनलोड कर सकते हैं।"
         },
         "q2": {
           "question": "क्या मुझे अकाउंट बनाना होगा?",
@@ -135,7 +154,7 @@
       },
       "api": {
         "title": "विश्वसनीय API",
-        "description": "99.9% अपटाइम गारंटी के साथ MultiSave API द्वारा संचालित"
+        "description": "99.9% अपटाइम गारंटी के साथ Downmate API द्वारा संचालित"
       },
       "noLogin": {
         "title": "लॉगिन आवश्यक नहीं",

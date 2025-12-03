@@ -1,11 +1,12 @@
 {
   "meta": {
-    "title": "Instagram Downloader | MultiSave",
+    "title": "Instagram Downloader | Downmate",
     "description": "Легко скачивайте видео и фото из Instagram"
   },
   "header": {
     "docs": "API Docs",
     "features": "Возможности",
+    "howToUse": "Инструкция",
     "faq": "FAQ",
     "support": "Поддержка"
   },
@@ -54,6 +55,24 @@
   "footer": {
     "poweredBy": "Работает на"
   },
+  "howTo": {
+    "title": "Как скачать",
+    "step": "Шаг",
+    "steps": {
+      "copy": {
+        "title": "Скопируйте ссылку",
+        "description": "Скопируйте ссылку на пост, рилс или сторис Instagram"
+      },
+      "paste": {
+        "title": "Вставьте URL",
+        "description": "Вставьте скопированную ссылку в поле выше"
+      },
+      "download": {
+        "title": "Скачайте",
+        "description": "Нажмите кнопку скачать и сохраните на устройство"
+      }
+    }
+  },
   "featuresPage": {
     "back": "Назад",
     "hero": {
@@ -61,14 +80,14 @@
       "subtitle": "Откройте для себя все удивительные функции, которые делают загрузку контента из Instagram проще, чем когда-либо"
     },
     "sections": {
-      "mainFeatures": "Почему MultiSave?"
+      "mainFeatures": "Почему Downmate?"
     },
     "faq": {
       "title": "Часто Задаваемые Вопросы",
       "items": {
         "q1": {
-          "question": "MultiSave бесплатен?",
-          "answer": "Да, MultiSave полностью бесплатен. Вы можете скачивать неограниченное количество контента из Instagram без какой-либо оплаты."
+          "question": "Downmate бесплатен?",
+          "answer": "Да, Downmate полностью бесплатен. Вы можете скачивать неограниченное количество контента из Instagram без какой-либо оплаты."
         },
         "q2": {
           "question": "Нужно ли создавать аккаунт?",
@@ -135,7 +154,7 @@
       },
       "api": {
         "title": "Надёжный API",
-        "description": "Работает на MultiSave API с гарантией безотказной работы 99.9%"
+        "description": "Работает на Downmate API с гарантией безотказной работы 99.9%"
       },
       "noLogin": {
         "title": "Без Регистрации",

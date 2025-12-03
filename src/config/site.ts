@@ -1,15 +1,15 @@
 export const siteConfig = {
-  name: "MultiSave Downloader",
-  shortName: "MultiSave",
+  name: "Downmate Downloader",
+  shortName: "Downmate",
   description: {
     uz: "Instagram video va rasmlarni osonlik bilan yuklab oling. Tez, xavfsiz va bepul.",
     en: "Download Instagram videos and images easily. Fast, secure and free.",
     ru: "Легко скачивайте видео и фото из Instagram. Быстро, безопасно и бесплатно.",
     hi: "Instagram वीडियो और फोटो आसानी से डाउनलोड करें। तेज़, सुरक्षित और मुफ्त।",
   },
-  url: "https://multisave.uz",
+  url: "https://Downmate.uz",
   ogImage: "/og-image.png",
-  creator: "@multisave",
+  creator: "@Downmate",
   keywords: {
     uz: [
       "instagram yuklab olish",
@@ -53,12 +53,12 @@ export const siteConfig = {
     ],
   },
   links: {
-    docs: "https://docs.multisave.uz",
-    api: "https://api.multisave.uz",
+    docs: "https://docs.Downmate.uz",
+    api: "https://api.Downmate.uz",
   },
   author: {
-    name: "MultiSave",
-    url: "https://multisave.uz",
+    name: "Downmate",
+    url: "https://Downmate.uz",
   },
   openGraph: {
     type: "website",
@@ -68,11 +68,11 @@ export const siteConfig = {
       ru: "ru_RU",
       hi: "hi_IN",
     },
-    siteName: "MultiSave",
+    siteName: "Downmate",
   },
   twitter: {
     card: "summary_large_image",
-    creator: "@multisave",
+    creator: "@Downmate",
   },
   verification: {
     google: "",

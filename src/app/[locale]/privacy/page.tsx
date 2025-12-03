@@ -24,7 +24,7 @@ export default function PrivacyPage() {
                 1. Introduction
               </h2>
               <p className="text-gray-600 dark:text-gray-400 leading-relaxed mb-4">
-                Welcome to Multisave (&quot;Company&quot;, &quot;we&quot;, &quot;our&quot;, &quot;us&quot;). We are committed to protecting your personal information and your right to privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our API marketplace platform and related services.
+                Welcome to Downmate (&quot;Company&quot;, &quot;we&quot;, &quot;our&quot;, &quot;us&quot;). We are committed to protecting your personal information and your right to privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our API marketplace platform and related services.
               </p>
               <p className="text-gray-600 dark:text-gray-400 leading-relaxed">
                 Please read this privacy policy carefully. If you do not agree with the terms of this privacy policy, please do not access the platform.
@@ -167,10 +167,10 @@ export default function PrivacyPage() {
               </p>
               <div className="bg-gray-50 dark:bg-gray-800 rounded-xl p-6">
                 <p className="text-gray-700 dark:text-gray-300">
-                  <strong>Email:</strong> privacy@multisave.uz
+                  <strong>Email:</strong> privacy@Downmate.uz
                 </p>
                 <p className="text-gray-700 dark:text-gray-300 mt-2">
-                  <strong>Support:</strong> support.multisave.uz
+                  <strong>Support:</strong> support.Downmate.uz
                 </p>
               </div>
             </section>

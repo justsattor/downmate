@@ -1,11 +1,12 @@
 {
   "meta": {
-    "title": "Instagram Downloader | MultiSave",
+    "title": "Instagram Downloader | Downmate",
     "description": "Instagram video va rasmlarni osonlik bilan yuklab oling"
   },
   "header": {
     "docs": "API Docs",
     "features": "Imkoniyatlar",
+    "howToUse": "Qo'llanma",
     "faq": "FAQ",
     "support": "Yordam"
   },
@@ -54,6 +55,24 @@
   "footer": {
     "poweredBy": "Powered by"
   },
+  "howTo": {
+    "title": "Qanday yuklab olish mumkin",
+    "step": "Qadam",
+    "steps": {
+      "copy": {
+        "title": "Havolani nusxalang",
+        "description": "Instagram post, reel yoki story havolasini nusxalang"
+      },
+      "paste": {
+        "title": "URL ni joylashtiring",
+        "description": "Nusxalangan havolani yuqoridagi maydonga joylashtiring"
+      },
+      "download": {
+        "title": "Yuklab oling",
+        "description": "Yuklab olish tugmasini bosing va qurilmangizga saqlang"
+      }
+    }
+  },
   "featuresPage": {
     "back": "Orqaga",
     "hero": {
@@ -61,14 +80,14 @@
       "subtitle": "Instagram kontentini yuklab olishni osonlashtiradigan barcha ajoyib xususiyatlarni kashf eting"
     },
     "sections": {
-      "mainFeatures": "Nega MultiSave?"
+      "mainFeatures": "Nega Downmate?"
     },
     "faq": {
       "title": "Ko'p So'raladigan Savollar",
       "items": {
         "q1": {
-          "question": "MultiSave bepulmi?",
-          "answer": "Ha, MultiSave to'liq bepul. Siz cheksiz Instagram kontentini hech qanday to'lovsiz yuklab olishingiz mumkin."
+          "question": "Downmate bepulmi?",
+          "answer": "Ha, Downmate to'liq bepul. Siz cheksiz Instagram kontentini hech qanday to'lovsiz yuklab olishingiz mumkin."
         },
         "q2": {
           "question": "Hisob yaratishim kerakmi?",
@@ -135,7 +154,7 @@
       },
       "api": {
         "title": "Ishonchli API",
-        "description": "99.9% ish vaqti kafolati bilan MultiSave API tomonidan quvvatlanadi"
+        "description": "99.9% ish vaqti kafolati bilan Downmate API tomonidan quvvatlanadi"
       },
       "noLogin": {
         "title": "Ro'yxatdan O'tish Shart Emas",
