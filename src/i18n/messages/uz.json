@@ -4,7 +4,9 @@
     "description": "Instagram video va rasmlarni osonlik bilan yuklab oling"
   },
   "header": {
-    "docs": "API Docs"
+    "docs": "API Docs",
+    "features": "Imkoniyatlar",
+    "faq": "FAQ"
   },
   "home": {
     "title": "Instagram Downloader",
@@ -50,5 +52,99 @@
   },
   "footer": {
     "poweredBy": "Powered by"
+  },
+  "featuresPage": {
+    "back": "Orqaga",
+    "hero": {
+      "title": "Kuchli Imkoniyatlar",
+      "subtitle": "Instagram kontentini yuklab olishni osonlashtiradigan barcha ajoyib xususiyatlarni kashf eting"
+    },
+    "sections": {
+      "mainFeatures": "Nega MultiSave?"
+    },
+    "faq": {
+      "title": "Ko'p So'raladigan Savollar",
+      "items": {
+        "q1": {
+          "question": "MultiSave bepulmi?",
+          "answer": "Ha, MultiSave to'liq bepul. Siz cheksiz Instagram kontentini hech qanday to'lovsiz yuklab olishingiz mumkin."
+        },
+        "q2": {
+          "question": "Hisob yaratishim kerakmi?",
+          "answer": "Yo'q, hisob yaratish yoki tizimga kirish shart emas. Shunchaki Instagram URL manzilini joylashtiring va yuklab olishni boshlang."
+        },
+        "q3": {
+          "question": "Qanday turdagi kontentlarni yuklab olish mumkin?",
+          "answer": "Siz Instagram Reels, postlar, rasmlar, videolar va carousel postlarni original sifatda yuklab olishingiz mumkin."
+        },
+        "q4": {
+          "question": "Foydalanish xavfsizmi?",
+          "answer": "Albatta! Biz shaxsiy ma'lumotlaringiz yoki yuklangan kontentni saqlamaymiz. Maxfiyligingiz bizning ustuvorligimiz."
+        },
+        "q5": {
+          "question": "Nega yuklab olish ishlamayapti?",
+          "answer": "Instagram posti ochiq ekanligiga va URL to'g'ri ekanligiga ishonch hosil qiling. Yopiq akkountlarga kirish mumkin emas."
+        }
+      }
+    },
+    "mainFeatures": {
+      "fast": {
+        "title": "Chaqmoq Tezligida",
+        "description": "Optimallashtirilgan serverlarimiz va samarali ishlov berish bilan sevimli kontentingizni soniyalarda yuklab oling"
+      },
+      "secure": {
+        "title": "100% Xavfsiz",
+        "description": "Sizning maxfiyligingiz bizning ustuvorligimiz. Biz hech qanday ma'lumotlaringizni saqlamaymiz"
+      },
+      "hd": {
+        "title": "HD Sifat",
+        "description": "Siqilish yoki sifat yo'qotilishisiz original sifatda yuklab oling"
+      },
+      "multiLang": {
+        "title": "Ko'p tilli",
+        "description": "Ingliz, o'zbek, rus va hindi tillarida mavjud"
+      },
+      "responsive": {
+        "title": "Mobil Qulay",
+        "description": "Har qanday qurilmada mukammal ishlaydi - kompyuter, planshet yoki telefon"
+      },
+      "instant": {
+        "title": "Bir Zumda Ishlov",
+        "description": "Navbatda kutish yo'q. Yuklab olish darhol boshlanadi"
+      }
+    },
+    "mediaFeatures": {
+      "reels": {
+        "title": "Reels va Videolar",
+        "description": "Instagram Reels va video postlarni to'liq HD sifatda yuklab oling"
+      },
+      "posts": {
+        "title": "Rasmlar",
+        "description": "Har qanday ommaviy postdan yuqori aniqlikdagi rasmlarni saqlang"
+      },
+      "carousel": {
+        "title": "Carousel Postlar",
+        "description": "Ko'p slaydli carousel postlardan barcha rasm va videolarni yuklab oling"
+      }
+    },
+    "technicalFeatures": {
+      "privacy": {
+        "title": "Ma'lumot Saqlanmaydi",
+        "description": "Biz shaxsiy ma'lumotlaringiz yoki yuklangan fayllaringizni hech qachon saqlamaymiz"
+      },
+      "api": {
+        "title": "Ishonchli API",
+        "description": "99.9% ish vaqti kafolati bilan MultiSave API tomonidan quvvatlanadi"
+      },
+      "noLogin": {
+        "title": "Ro'yxatdan O'tish Shart Emas",
+        "description": "Hisob yaratmasdan darhol yuklab olishni boshlang"
+      }
+    },
+    "cta": {
+      "title": "Yuklab Olishga Tayyormisiz?",
+      "subtitle": "Sevimli Instagram kontentingizni hoziroq yuklab olishni boshlang. Bu bepul, tez va xavfsiz!",
+      "button": "Yuklab Olishni Boshlash"
+    }
   }
 }

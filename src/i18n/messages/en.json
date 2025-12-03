@@ -4,7 +4,9 @@
     "description": "Download Instagram videos and images easily"
   },
   "header": {
-    "docs": "API Docs"
+    "docs": "API Docs",
+    "features": "Features",
+    "faq": "FAQ"
   },
   "home": {
     "title": "Instagram Downloader",
@@ -50,5 +52,99 @@
   },
   "footer": {
     "poweredBy": "Powered by"
+  },
+  "featuresPage": {
+    "back": "Back",
+    "hero": {
+      "title": "Powerful Features",
+      "subtitle": "Discover all the amazing features that make downloading Instagram content easier than ever"
+    },
+    "sections": {
+      "mainFeatures": "Why Choose MultiSave?"
+    },
+    "faq": {
+      "title": "Frequently Asked Questions",
+      "items": {
+        "q1": {
+          "question": "Is MultiSave free to use?",
+          "answer": "Yes, MultiSave is completely free to use. You can download unlimited Instagram content without any charges."
+        },
+        "q2": {
+          "question": "Do I need to create an account?",
+          "answer": "No, you don't need to create an account or log in. Simply paste the Instagram URL and start downloading."
+        },
+        "q3": {
+          "question": "What types of content can I download?",
+          "answer": "You can download Instagram Reels, posts, photos, videos, and carousel posts in original quality."
+        },
+        "q4": {
+          "question": "Is it safe to use?",
+          "answer": "Absolutely! We don't store any of your personal data or downloaded content. Your privacy is our priority."
+        },
+        "q5": {
+          "question": "Why isn't my download working?",
+          "answer": "Make sure the Instagram post is public and the URL is correct. Private accounts cannot be accessed."
+        }
+      }
+    },
+    "mainFeatures": {
+      "fast": {
+        "title": "Lightning Fast",
+        "description": "Download your favorite content in seconds with our optimized servers and efficient processing"
+      },
+      "secure": {
+        "title": "100% Secure",
+        "description": "Your privacy is our priority. We don't store any of your data or downloaded content"
+      },
+      "hd": {
+        "title": "HD Quality",
+        "description": "Get original quality downloads without any compression or quality loss"
+      },
+      "multiLang": {
+        "title": "Multi-Language",
+        "description": "Available in multiple languages including English, Uzbek, Russian, and Hindi"
+      },
+      "responsive": {
+        "title": "Mobile Friendly",
+        "description": "Works perfectly on any device - desktop, tablet, or mobile phone"
+      },
+      "instant": {
+        "title": "Instant Processing",
+        "description": "No waiting in queues. Your download starts immediately after submission"
+      }
+    },
+    "mediaFeatures": {
+      "reels": {
+        "title": "Reels & Videos",
+        "description": "Download Instagram Reels and video posts in full HD quality"
+      },
+      "posts": {
+        "title": "Photos & Images",
+        "description": "Save high-resolution photos and images from any public post"
+      },
+      "carousel": {
+        "title": "Carousel Posts",
+        "description": "Download all images and videos from multi-slide carousel posts"
+      }
+    },
+    "technicalFeatures": {
+      "privacy": {
+        "title": "No Data Storage",
+        "description": "We never store your personal information or downloaded files"
+      },
+      "api": {
+        "title": "Reliable API",
+        "description": "Powered by MultiSave API with 99.9% uptime guarantee"
+      },
+      "noLogin": {
+        "title": "No Login Required",
+        "description": "Start downloading immediately without creating an account"
+      }
+    },
+    "cta": {
+      "title": "Ready to Download?",
+      "subtitle": "Start downloading your favorite Instagram content now. It's free, fast, and secure!",
+      "button": "Start Downloading"
+    }
   }
 }

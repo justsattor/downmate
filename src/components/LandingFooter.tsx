@@ -14,6 +14,7 @@ export default function LandingFooter() {
 
   const footerLinks = {
     product: [
+      { name: "Features", href: "/features" },
       { name: "Categories", href: "/explore" },
       { name: "Pricing", href: "/pricing" },
       { name: "API Docs", href: DOCS_URL, external: true },

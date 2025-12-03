@@ -1,10 +1,11 @@
 "use client";
 
 import { useState } from "react";
-import { Moon, Sun, ExternalLink, Globe, ChevronDown } from "lucide-react";
+import { Moon, Sun, ExternalLink, Globe, ChevronDown, Sparkles, HelpCircle } from "lucide-react";
 import { useTheme } from "@/context/ThemeContext";
 import { useTranslations, useLocale } from "next-intl";
 import { useRouter, usePathname } from "next/navigation";
+import Link from "next/link";
 import { cn } from "@/lib/utils";
 
 const languages = [
@@ -51,6 +52,32 @@ export function Header() {
         </div>
 
         <div className="flex items-center gap-2 sm:gap-3">
+          <Link
+            href={`/${locale}/features`}
+            className={cn(
+              "flex items-center gap-1.5 px-3 py-2 rounded-lg",
+              "text-gray-600 dark:text-gray-300",
+              "hover:bg-gray-100 dark:hover:bg-gray-800",
+              "transition-colors text-sm font-medium"
+            )}
+          >
+            <Sparkles className="w-4 h-4" />
+            <span className="hidden sm:inline">{t("features")}</span>
+          </Link>
+
+          <Link
+            href={`/${locale}/features#faq`}
+            className={cn(
+              "flex items-center gap-1.5 px-3 py-2 rounded-lg",
+              "text-gray-600 dark:text-gray-300",
+              "hover:bg-gray-100 dark:hover:bg-gray-800",
+              "transition-colors text-sm font-medium"
+            )}
+          >
+            <HelpCircle className="w-4 h-4" />
+            <span className="hidden sm:inline">{t("faq")}</span>
+          </Link>
+
           <div className="relative">
             <button
               onClick={() => setLangOpen(!langOpen)}
