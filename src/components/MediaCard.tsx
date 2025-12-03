@@ -52,14 +52,14 @@ export function MediaCard({ item, onDownload }: MediaCardProps) {
         <button
           onClick={onDownload}
           className={cn(
-            "w-full flex items-center justify-center gap-2 px-4 py-2.5 rounded-lg font-medium transition-colors",
+            "w-full flex items-center justify-center gap-2 px-3 py-2 rounded-lg text-sm font-medium transition-colors",
             item.type === "video"
               ? "bg-brand-500 hover:bg-brand-600 text-white"
               : "bg-gray-900 hover:bg-gray-800 dark:bg-gray-700 dark:hover:bg-gray-600 text-white"
           )}
         >
           <Download className="w-4 h-4" />
-          {item.type === "video" ? t("downloadVideo") : t("downloadImage")} ({formatSize(item.size)})
+          {t("download")} ({formatSize(item.size)})
         </button>
       </div>
     </div>

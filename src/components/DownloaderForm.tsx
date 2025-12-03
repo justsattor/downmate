@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { Download, Link2, Loader2, AlertCircle, CheckCircle2, Instagram } from "lucide-react";
+import { Download, Link2, Loader2, AlertCircle, CheckCircle2, Instagram, Clipboard, X } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { cn } from "@/lib/utils";
 import { InstagramMediaItem, InstagramApiResponse } from "@/lib/types";
@@ -13,6 +13,19 @@ export function DownloaderForm() {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [results, setResults] = useState<InstagramMediaItem[]>([]);
+
+  const handlePaste = async () => {
+    try {
+      const text = await navigator.clipboard.readText();
+      setUrl(text);
+    } catch {
+      // Clipboard access denied
+    }
+  };
+
+  const handleClear = () => {
+    setUrl("");
+  };
 
   const getErrorMessage = (error: string, statusCode?: number): string => {
     if (error.toLowerCase().includes("invalid") && error.toLowerCase().includes("api key")) {
@@ -58,6 +71,11 @@ export function DownloaderForm() {
 
       const apiResponse = data as InstagramApiResponse;
       setResults(apiResponse.medias || []);
+      
+      // Muvaffaqiyatli yuklanganda inputni tozalash
+      if (apiResponse.medias && apiResponse.medias.length > 0) {
+        setUrl("");
+      }
     } catch (err) {
       setError(err instanceof Error ? err.message : t("form.error"));
     } finally {
@@ -86,17 +104,30 @@ export function DownloaderForm() {
           <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
             {t("form.label")}
           </label>
-          <div className="relative">
-            <div className="absolute left-4 top-1/2 -translate-y-1/2">
-              <Link2 className="w-5 h-5 text-gray-400" />
+          <div className="flex items-center gap-2">
+            <div className="relative flex-1">
+              <div className="absolute left-4 top-1/2 -translate-y-1/2">
+                <Link2 className="w-5 h-5 text-gray-400" />
+              </div>
+              <input
+                type="url"
+                value={url}
+                onChange={(e) => setUrl(e.target.value)}
+                placeholder={t("form.placeholder")}
+                className="w-full pl-12 pr-4 py-3.5 rounded-xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 text-gray-900 dark:text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-brand-500 focus:border-transparent transition-all"
+              />
             </div>
-            <input
-              type="url"
-              value={url}
-              onChange={(e) => setUrl(e.target.value)}
-              placeholder={t("form.placeholder")}
-              className="w-full pl-12 pr-4 py-3.5 rounded-xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 text-gray-900 dark:text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-brand-500 focus:border-transparent transition-all"
-            />
+            <button
+              type="button"
+              onClick={url ? handleClear : handlePaste}
+              className="p-3.5 text-gray-400 hover:text-gray-600 dark:hover:text-gray-300 transition-colors"
+            >
+              {url ? (
+                <X className="w-6 h-6" />
+              ) : (
+                <Clipboard className="w-6 h-6" />
+              )}
+            </button>
           </div>
         </div>
 

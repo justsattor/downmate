@@ -49,6 +49,7 @@
     "multiple": "{count} media found",
     "video": "Video",
     "image": "Image",
+    "download": "Download",
     "downloadVideo": "Download Video",
     "downloadImage": "Download Image"
   },

@@ -49,6 +49,7 @@
     "multiple": "Найдено {count} медиафайлов",
     "video": "Видео",
     "image": "Фото",
+    "download": "Скачать",
     "downloadVideo": "Скачать видео",
     "downloadImage": "Скачать фото"
   },

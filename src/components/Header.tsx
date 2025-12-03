@@ -154,6 +154,44 @@ export function Header() {
             )}
           </button>
 
+          {/* Mobile Language Switcher */}
+          <div className="relative">
+            <button
+              onClick={() => setLangOpen(!langOpen)}
+              className={cn(
+                "p-2 rounded-lg",
+                "text-gray-500 dark:text-gray-400",
+                "hover:bg-gray-100 dark:hover:bg-gray-800",
+                "transition-colors"
+              )}
+            >
+              <Globe className="w-5 h-5" />
+            </button>
+
+            {langOpen && (
+              <>
+                <div className="fixed inset-0 z-40" onClick={() => setLangOpen(false)} />
+                <div className="absolute right-0 top-full mt-1 z-50 bg-white dark:bg-gray-800 rounded-lg shadow-xl border border-gray-200 dark:border-gray-700 py-1 min-w-[140px]">
+                  {languages.map((lang) => (
+                    <button
+                      key={lang.code}
+                      onClick={() => handleLanguageChange(lang.code)}
+                      className={cn(
+                        "w-full text-left px-4 py-2 text-sm hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors flex items-center gap-2",
+                        locale === lang.code
+                          ? "text-brand-500 dark:text-brand-400"
+                          : "text-gray-700 dark:text-gray-300"
+                      )}
+                    >
+                      <span>{lang.flag}</span>
+                      {lang.label}
+                    </button>
+                  ))}
+                </div>
+              </>
+            )}
+          </div>
+
           <button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             className={cn(
@@ -192,32 +230,6 @@ export function Header() {
                 {link.label}
               </a>
             ))}
-
-            <div className="border-t border-gray-200 dark:border-gray-800 pt-2 mt-2">
-              <div className="px-4 py-2 text-xs font-medium text-gray-500 dark:text-gray-400 uppercase">
-                {t("features") === "Features" ? "Language" : "Til"}
-              </div>
-              <div className="grid grid-cols-2 gap-2">
-                {languages.map((lang) => (
-                  <button
-                    key={lang.code}
-                    onClick={() => {
-                      handleLanguageChange(lang.code);
-                      setMobileMenuOpen(false);
-                    }}
-                    className={cn(
-                      "flex items-center gap-2 px-4 py-2 rounded-lg text-sm transition-colors",
-                      locale === lang.code
-                        ? "bg-brand-500/10 text-brand-500 dark:text-brand-400"
-                        : "text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800"
-                    )}
-                  >
-                    <span>{lang.flag}</span>
-                    {lang.label}
-                  </button>
-                ))}
-              </div>
-            </div>
 
             <div className="pt-2">
               <a
