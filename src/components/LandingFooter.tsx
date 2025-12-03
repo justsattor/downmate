@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import Image from "next/image";
+import { CirclePlay } from "lucide-react";
 import { useTheme } from "@/context/ThemeContext";
 
 const DOCS_URL = "https://docs.multisave.uz";
@@ -56,16 +56,14 @@ export default function LandingFooter() {
       <div style={{ maxWidth: '1280px', margin: '0 auto', padding: '48px 24px' }}>
         <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'space-between', gap: '48px' }}>
           <div style={{ maxWidth: '280px' }}>
-            <Link href="/">
-              <Image
-                src={theme === 'dark' ? '/images/logo/logo-dark.svg' : '/images/logo/logo.svg'}
-                alt="Multisave"
-                width={160}
-                height={32}
-              />
+            <Link href="/" className="flex items-center gap-2">
+              <CirclePlay className="w-8 h-8 text-brand-500" />
+              <span className="text-lg font-semibold text-gray-900 dark:text-white">
+                Downmate
+              </span>
             </Link>
             <p style={{ marginTop: '16px', fontSize: '14px' }} className="text-gray-600 dark:text-gray-400">
-              Your ultimate API marketplace. Discover, connect, and integrate powerful APIs in minutes.
+              Download Instagram videos, reels and photos easily. Fast, secure and free.
             </p>
             <div style={{ marginTop: '24px', display: 'flex', alignItems: 'center', gap: '16px' }}>
               {socialLinks.map((item) => (
@@ -139,7 +137,7 @@ export default function LandingFooter() {
 
         <div style={{ marginTop: '48px', paddingTop: '32px' }} className="border-t border-gray-200 dark:border-gray-800">
           <p style={{ fontSize: '14px', textAlign: 'center' }} className="text-gray-500 dark:text-gray-400">
-            © {currentYear} Multisave. All rights reserved.
+            © {currentYear} Downmate. All rights reserved.
           </p>
         </div>
       </div>

@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { Moon, Sun, ExternalLink, Globe, ChevronDown, Sparkles, HelpCircle } from "lucide-react";
+import { Moon, Sun, MessageCircle, Globe, ChevronDown, Sparkles, HelpCircle, CirclePlay } from "lucide-react";
 import { useTheme } from "@/context/ThemeContext";
 import { useTranslations, useLocale } from "next-intl";
 import { useRouter, usePathname } from "next/navigation";
@@ -34,22 +34,12 @@ export function Header() {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 h-16 bg-white/80 dark:bg-gray-950/80 backdrop-blur-md border-b border-gray-200 dark:border-gray-800">
       <div className="max-w-4xl mx-auto flex items-center justify-between h-16 px-4 sm:px-6">
-        <div className="flex items-center gap-2">
-          <svg className="w-8 h-8 flex-shrink-0" viewBox="0 0 32 32" fill="none">
-            <rect width="32" height="32" rx="8" className="fill-brand-50 dark:fill-brand-500/10" />
-            <path d="M16 6L8 11V21L16 26L24 21V11L16 6Z" className="stroke-brand-500" strokeWidth="1.5" strokeLinejoin="round" />
-            <path d="M16 6V26" className="stroke-brand-500" strokeWidth="1.5" strokeLinecap="round" />
-            <path d="M8 11L16 16L24 11" className="stroke-brand-500" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-            <path d="M8 21L16 16" className="stroke-brand-500" strokeWidth="1.5" strokeLinecap="round" />
-            <path d="M24 21L16 16" className="stroke-brand-500" strokeWidth="1.5" strokeLinecap="round" />
-          </svg>
+        <Link href={`/${locale}`} className="flex items-center gap-2">
+          <CirclePlay className="w-8 h-8 text-brand-500" />
           <span className="text-lg font-semibold text-gray-900 dark:text-white">
-            MultiSave
+            Downmate
           </span>
-          <span className="px-2 py-0.5 text-xs font-medium rounded-full bg-brand-50 text-brand-600 dark:bg-brand-500/10 dark:text-brand-400">
-            Demo
-          </span>
-        </div>
+        </Link>
 
         <div className="flex items-center gap-2 sm:gap-3">
           <Link
@@ -134,7 +124,7 @@ export function Header() {
           </button>
 
           <a
-            href="https://docs.multisave.uz"
+            href="https://t.me/techiboyz"
             target="_blank"
             className={cn(
               "flex items-center gap-2 p-2 sm:px-4 sm:py-2 rounded-lg",
@@ -143,8 +133,8 @@ export function Header() {
               "transition-colors"
             )}
           >
-            <span className="hidden sm:inline">{t("docs")}</span>
-            <ExternalLink className="w-4 h-4" />
+            <span className="hidden sm:inline">{t("support")}</span>
+            <MessageCircle className="w-4 h-4" />
           </a>
         </div>
       </div>

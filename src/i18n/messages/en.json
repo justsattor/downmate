@@ -1,12 +1,13 @@
 {
   "meta": {
-    "title": "Instagram Downloader | MultiSave",
+    "title": "Instagram Downloader | Downmate",
     "description": "Download Instagram videos and images easily"
   },
   "header": {
     "docs": "API Docs",
     "features": "Features",
-    "faq": "FAQ"
+    "faq": "FAQ",
+    "support": "Support"
   },
   "home": {
     "title": "Instagram Downloader",
@@ -60,14 +61,14 @@
       "subtitle": "Discover all the amazing features that make downloading Instagram content easier than ever"
     },
     "sections": {
-      "mainFeatures": "Why Choose MultiSave?"
+      "mainFeatures": "Why Choose Downmate?"
     },
     "faq": {
       "title": "Frequently Asked Questions",
       "items": {
         "q1": {
-          "question": "Is MultiSave free to use?",
-          "answer": "Yes, MultiSave is completely free to use. You can download unlimited Instagram content without any charges."
+          "question": "Is Downmate free to use?",
+          "answer": "Yes, Downmate is completely free to use. You can download unlimited Instagram content without any charges."
         },
         "q2": {
           "question": "Do I need to create an account?",
@@ -112,39 +113,6 @@
         "title": "Instant Processing",
         "description": "No waiting in queues. Your download starts immediately after submission"
       }
-    },
-    "mediaFeatures": {
-      "reels": {
-        "title": "Reels & Videos",
-        "description": "Download Instagram Reels and video posts in full HD quality"
-      },
-      "posts": {
-        "title": "Photos & Images",
-        "description": "Save high-resolution photos and images from any public post"
-      },
-      "carousel": {
-        "title": "Carousel Posts",
-        "description": "Download all images and videos from multi-slide carousel posts"
-      }
-    },
-    "technicalFeatures": {
-      "privacy": {
-        "title": "No Data Storage",
-        "description": "We never store your personal information or downloaded files"
-      },
-      "api": {
-        "title": "Reliable API",
-        "description": "Powered by MultiSave API with 99.9% uptime guarantee"
-      },
-      "noLogin": {
-        "title": "No Login Required",
-        "description": "Start downloading immediately without creating an account"
-      }
-    },
-    "cta": {
-      "title": "Ready to Download?",
-      "subtitle": "Start downloading your favorite Instagram content now. It's free, fast, and secure!",
-      "button": "Start Downloading"
     }
   }
 }
