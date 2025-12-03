@@ -131,7 +131,6 @@ export default function FeaturesPage() {
 
         {/* Spacer */}
         <div className="h-24 sm:h-32"></div>
-
         {/* FAQ Section */}
         <section id="faq" className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 mb-20">
           <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 dark:text-white text-center mb-12">
