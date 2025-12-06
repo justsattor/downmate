@@ -134,5 +134,22 @@
         "description": "No waiting in queues. Your download starts immediately after submission"
       }
     }
+  },
+  "about": {
+    "title": "About Us",
+    "description": "Downmate is a free online service that makes downloading Instagram content easy and convenient. We provide users with the ability to quickly and securely download Instagram posts, reels, stories, and photos.",
+    "mission": {
+      "title": "Our Mission",
+      "description": "To empower every user to easily download and enjoy their favorite Instagram content offline."
+    },
+    "values": {
+      "title": "Our Values",
+      "items": {
+        "free": "100% Free - no hidden charges",
+        "privacy": "Privacy First - your data is never stored",
+        "quality": "Quality - download in original HD format",
+        "simple": "Simplicity - use without registration"
+      }
+    }
   }
 }

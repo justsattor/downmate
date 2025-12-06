@@ -24,10 +24,10 @@ export default function PrivacyPage() {
                 1. Introduction
               </h2>
               <p className="text-gray-600 dark:text-gray-400 leading-relaxed mb-4">
-                Welcome to Downmate (&quot;Company&quot;, &quot;we&quot;, &quot;our&quot;, &quot;us&quot;). We are committed to protecting your personal information and your right to privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our API marketplace platform and related services.
+                Welcome to Downmate (&quot;we&quot;, &quot;our&quot;, &quot;us&quot;). We are committed to protecting your privacy. This Privacy Policy explains how we collect, use, and safeguard your information when you use our Instagram downloader service.
               </p>
               <p className="text-gray-600 dark:text-gray-400 leading-relaxed">
-                Please read this privacy policy carefully. If you do not agree with the terms of this privacy policy, please do not access the platform.
+                Please read this privacy policy carefully. If you do not agree with the terms of this privacy policy, please do not use our service.
               </p>
             </section>
 
@@ -39,27 +39,25 @@ export default function PrivacyPage() {
                 Personal Information
               </h3>
               <p className="text-gray-600 dark:text-gray-400 leading-relaxed mb-4">
-                We collect personal information that you voluntarily provide to us when you register on the platform, express an interest in obtaining information about us or our products and services, or otherwise contact us. This includes:
+                We do not require you to register or provide personal information to use our service. However, if you contact us for support, we may collect:
               </p>
               <ul className="list-disc list-inside text-gray-600 dark:text-gray-400 space-y-2 mb-4">
-                <li>Name and contact information (email address, phone number)</li>
-                <li>Account credentials (username, password)</li>
-                <li>Billing information (payment card details, billing address)</li>
-                <li>Profile information (avatar, bio, company name)</li>
-                <li>API usage data and preferences</li>
+                <li>Email address (if you contact support)</li>
+                <li>Instagram URLs you submit for downloading</li>
+                <li>Feedback and correspondence</li>
               </ul>
 
               <h3 className="text-xl font-medium text-gray-900 dark:text-white mb-3">
                 Automatically Collected Information
               </h3>
               <p className="text-gray-600 dark:text-gray-400 leading-relaxed mb-4">
-                When you access our platform, we automatically collect certain information, including:
+                When you use our service, we automatically collect minimal information, including:
               </p>
               <ul className="list-disc list-inside text-gray-600 dark:text-gray-400 space-y-2">
-                <li>Device and browser information</li>
-                <li>IP address and location data</li>
-                <li>Usage patterns and API call logs</li>
-                <li>Cookies and similar tracking technologies</li>
+                <li>Browser type and version</li>
+                <li>IP address (for security and rate limiting)</li>
+                <li>Download requests and timestamps</li>
+                <li>Cookies for site functionality and preferences</li>
               </ul>
             </section>
 
@@ -68,15 +66,15 @@ export default function PrivacyPage() {
                 3. How We Use Your Information
               </h2>
               <p className="text-gray-600 dark:text-gray-400 leading-relaxed mb-4">
-                We use the information we collect for various purposes, including:
+                We use the information we collect for the following purposes:
               </p>
               <ul className="list-disc list-inside text-gray-600 dark:text-gray-400 space-y-2">
-                <li>Providing, maintaining, and improving our services</li>
-                <li>Processing transactions and managing your account</li>
-                <li>Sending administrative information and updates</li>
-                <li>Responding to inquiries and providing customer support</li>
-                <li>Monitoring and analyzing usage trends and preferences</li>
-                <li>Detecting, preventing, and addressing technical issues</li>
+                <li>Providing and maintaining our download service</li>
+                <li>Processing your download requests</li>
+                <li>Improving service performance and user experience</li>
+                <li>Responding to support inquiries</li>
+                <li>Monitoring and analyzing usage patterns</li>
+                <li>Preventing abuse and ensuring service security</li>
                 <li>Complying with legal obligations</li>
               </ul>
             </section>
@@ -86,13 +84,12 @@ export default function PrivacyPage() {
                 4. Data Sharing and Disclosure
               </h2>
               <p className="text-gray-600 dark:text-gray-400 leading-relaxed mb-4">
-                We may share your information in the following circumstances:
+                We do not sell or rent your information to third parties. We may share information only in these limited circumstances:
               </p>
               <ul className="list-disc list-inside text-gray-600 dark:text-gray-400 space-y-2">
-                <li><strong>Service Providers:</strong> With third-party vendors who assist in operating our platform</li>
+                <li><strong>Service Providers:</strong> With hosting and infrastructure providers who help operate our service</li>
+                <li><strong>Legal Requirements:</strong> When required by law or to protect our rights and safety</li>
                 <li><strong>Business Transfers:</strong> In connection with mergers, acquisitions, or asset sales</li>
-                <li><strong>Legal Requirements:</strong> When required by law or to protect our rights</li>
-                <li><strong>With Your Consent:</strong> When you have given us explicit permission</li>
               </ul>
             </section>
 
@@ -101,7 +98,7 @@ export default function PrivacyPage() {
                 5. Data Security
               </h2>
               <p className="text-gray-600 dark:text-gray-400 leading-relaxed">
-                We implement appropriate technical and organizational security measures to protect your personal information. This includes encryption of data in transit and at rest, regular security assessments, and access controls. However, no method of transmission over the Internet is 100% secure, and we cannot guarantee absolute security.
+                We implement appropriate security measures to protect the information we collect. This includes HTTPS encryption for data in transit, secure servers, and rate limiting to prevent abuse. However, no method of transmission over the Internet is 100% secure, and we cannot guarantee absolute security.
               </p>
             </section>
 
@@ -127,7 +124,7 @@ export default function PrivacyPage() {
                 7. Cookies and Tracking
               </h2>
               <p className="text-gray-600 dark:text-gray-400 leading-relaxed">
-                We use cookies and similar tracking technologies to collect and store information about your interactions with our platform. You can control cookie preferences through your browser settings. Essential cookies are required for the platform to function properly and cannot be disabled.
+                We use cookies to remember your preferences (like theme and language settings) and to analyze site usage. You can control cookie preferences through your browser settings. Essential cookies are required for the service to function properly.
               </p>
             </section>
 
@@ -136,7 +133,7 @@ export default function PrivacyPage() {
                 8. Data Retention
               </h2>
               <p className="text-gray-600 dark:text-gray-400 leading-relaxed">
-                We retain your personal information for as long as necessary to fulfill the purposes outlined in this Privacy Policy, unless a longer retention period is required or permitted by law. When we no longer need your information, we will securely delete or anonymize it.
+                We retain minimal information and only for as long as necessary to provide our service. Download logs are automatically deleted after 30 days. Analytics data is anonymized and retained for service improvement purposes.
               </p>
             </section>
 
@@ -156,23 +153,6 @@ export default function PrivacyPage() {
               <p className="text-gray-600 dark:text-gray-400 leading-relaxed">
                 We may update this Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page and updating the &quot;Last updated&quot; date. We encourage you to review this Privacy Policy periodically for any changes.
               </p>
-            </section>
-
-            <section>
-              <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mb-4">
-                11. Contact Us
-              </h2>
-              <p className="text-gray-600 dark:text-gray-400 leading-relaxed mb-4">
-                If you have questions or concerns about this Privacy Policy or our data practices, please contact us:
-              </p>
-              <div className="bg-gray-50 dark:bg-gray-800 rounded-xl p-6">
-                <p className="text-gray-700 dark:text-gray-300">
-                  <strong>Email:</strong> privacy@Downmate.uz
-                </p>
-                <p className="text-gray-700 dark:text-gray-300 mt-2">
-                  <strong>Support:</strong> support.Downmate.uz
-                </p>
-              </div>
             </section>
           </div>
         </div>

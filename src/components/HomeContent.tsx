@@ -96,29 +96,6 @@ export function HomeContent({ children }: HomeContentProps) {
 
       {children}
 
-      {/* Features Section */}
-      <section id="features" className="mt-8">
-        <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 dark:text-white text-center mb-12">
-          {t("featuresPage.sections.mainFeatures")}
-        </h2>
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
-          {allFeatures.map((feature, index) => (
-            <div
-              key={index}
-              className="p-5 rounded-xl border border-gray-200 dark:border-gray-800 bg-gray-50 dark:bg-gray-800/50 text-center"
-            >
-              <feature.icon className="w-6 h-6 text-brand-500 mx-auto mb-3" />
-              <h3 className="text-sm font-semibold text-gray-900 dark:text-white mb-1">
-                {feature.title}
-              </h3>
-              <p className="text-xs text-gray-600 dark:text-gray-400">
-                {feature.description}
-              </p>
-            </div>
-          ))}
-        </div>
-      </section>
-
       {/* How to Download Section */}
       <section id="how-to" className="mt-8">
         <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 dark:text-white text-center mb-12">
@@ -164,6 +141,29 @@ export function HomeContent({ children }: HomeContentProps) {
         </div>
       </section>
 
+      {/* Features Section */}
+      <section id="features" className="mt-8">
+        <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 dark:text-white text-center mb-12">
+          {t("featuresPage.sections.mainFeatures")}
+        </h2>
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+          {allFeatures.map((feature, index) => (
+            <div
+              key={index}
+              className="p-5 rounded-xl border border-gray-200 dark:border-gray-800 bg-gray-50 dark:bg-gray-800/50 text-center"
+            >
+              <feature.icon className="w-6 h-6 text-brand-500 mx-auto mb-3" />
+              <h3 className="text-sm font-semibold text-gray-900 dark:text-white mb-1">
+                {feature.title}
+              </h3>
+              <p className="text-xs text-gray-600 dark:text-gray-400">
+                {feature.description}
+              </p>
+            </div>
+          ))}
+        </div>
+      </section>
+
       {/* FAQ Section */}
       <section id="faq" className="mt-8">
         <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 dark:text-white text-center mb-12">
@@ -197,6 +197,55 @@ export function HomeContent({ children }: HomeContentProps) {
               )}
             </div>
           ))}
+        </div>
+      </section>
+
+      {/* About Us Section */}
+      <section id="about" className="mt-8">
+        <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 dark:text-white text-center mb-4">
+          {t("about.title")}
+        </h2>
+        <div className="space-y-4">
+          <div className="p-6 rounded-xl border border-gray-200 dark:border-gray-800 bg-gray-50 dark:bg-gray-800/50">
+            <p className="text-sm text-gray-600 dark:text-gray-400 leading-relaxed text-center">
+              {t("about.description")}
+            </p>
+          </div>
+          
+          <div className="flex flex-col sm:flex-row gap-4">
+            <div className="flex-1 p-6 rounded-xl border border-gray-200 dark:border-gray-800 bg-gradient-to-br from-brand-50 to-transparent dark:from-brand-500/5">
+              <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-3">
+                {t("about.mission.title")}
+              </h3>
+              <p className="text-sm text-gray-600 dark:text-gray-400 leading-relaxed">
+                {t("about.mission.description")}
+              </p>
+            </div>
+            
+            <div className="flex-1 p-6 rounded-xl border border-gray-200 dark:border-gray-800 bg-gradient-to-br from-purple-50 to-transparent dark:from-purple-500/5">
+              <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-3">
+                {t("about.values.title")}
+              </h3>
+              <ul className="space-y-2">
+                <li className="flex items-start gap-2 text-sm text-gray-600 dark:text-gray-400">
+                  <span className="text-brand-500 mt-0.5">✓</span>
+                  <span>{t("about.values.items.free")}</span>
+                </li>
+                <li className="flex items-start gap-2 text-sm text-gray-600 dark:text-gray-400">
+                  <span className="text-brand-500 mt-0.5">✓</span>
+                  <span>{t("about.values.items.privacy")}</span>
+                </li>
+                <li className="flex items-start gap-2 text-sm text-gray-600 dark:text-gray-400">
+                  <span className="text-brand-500 mt-0.5">✓</span>
+                  <span>{t("about.values.items.quality")}</span>
+                </li>
+                <li className="flex items-start gap-2 text-sm text-gray-600 dark:text-gray-400">
+                  <span className="text-brand-500 mt-0.5">✓</span>
+                  <span>{t("about.values.items.simple")}</span>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
       </section>
     </>

@@ -167,5 +167,22 @@
       "subtitle": "Sevimli Instagram kontentingizni hoziroq yuklab olishni boshlang. Bu bepul, tez va xavfsiz!",
       "button": "Yuklab Olishni Boshlash"
     }
+  },
+  "about": {
+    "title": "Biz haqimizda",
+    "description": "Downmate - bu Instagram kontentini yuklab olishni oson va qulay qiladigan bepul onlayn xizmat. Biz foydalanuvchilarga Instagram postlari, reellari, story va rasmlarni tez va xavfsiz yuklab olish imkoniyatini taqdim etamiz.",
+    "mission": {
+      "title": "Bizning maqsadimiz",
+      "description": "Har bir foydalanuvchiga sevimli Instagram kontentlarini osonlik bilan yuklab olish va oflayn ko'rish imkoniyatini berish."
+    },
+    "values": {
+      "title": "Bizning qadriyatlarimiz",
+      "items": {
+        "free": "100% bepul - hech qanday yashirin to'lovlar yo'q",
+        "privacy": "Maxfiylik - ma'lumotlaringiz saqlanmaydi",
+        "quality": "Sifat - original HD formatda yuklab olish",
+        "simple": "Soddalik - ro'yxatdan o'tishsiz foydalanish"
+      }
+    }
   }
 }

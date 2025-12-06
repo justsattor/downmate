@@ -33,9 +33,9 @@ export function Header() {
   const currentLang = languages.find((l) => l.code === locale) || languages[0];
 
   const navLinks = [
-    { href: "#features", icon: Sparkles, label: t("features") },
-    { href: "#how-to", icon: BookOpen, label: t("howToUse") },
-    { href: "#faq", icon: HelpCircle, label: t("faq") },
+    { href: `/${locale}#features`, icon: Sparkles, label: t("features") },
+    { href: `/${locale}#how-to`, icon: BookOpen, label: t("howToUse") },
+    { href: `/${locale}#faq`, icon: HelpCircle, label: t("faq") },
   ];
 
   return (

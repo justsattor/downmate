@@ -66,7 +66,7 @@ export default function LandingFooter() {
 
           <div style={{ display: 'flex', flexWrap: 'wrap', gap: '64px' }}>
             <div>
-              <h3 style={{ fontSize: '14px', fontWeight: '600' }} className="text-gray-900 dark:text-white">Product</h3>
+              <h3 style={{ fontSize: '14px', fontWeight: '600' }} className="text-gray-900 dark:text-white">Sections</h3>
               <ul style={{ marginTop: '16px', display: 'flex', flexDirection: 'column', gap: '12px' }}>
                 {footerLinks.product.map((link) => (
                   <li key={link.name}>
